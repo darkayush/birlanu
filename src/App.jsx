@@ -15,7 +15,9 @@ import HumanCapital from './Pages/CorporateOverview/HumanCapital';
 import BoardOfDirectors from './Pages/CorporateOverview/BoardOfDirectors';
 import AwardsAndAchievements from './Pages/CorporateOverview/AwardsAndAchievements';
 import CorporateInformation from './Pages/CorporateOverview/CorporateInformation';
-import { Home } from 'lucide-react';
+import Footer from './Components/Footer';
+import Home from './Pages/CorporateOverview/Home';
+import BuildYourWorld from './Pages/CorporateOverview/BuildYourWorld';
 
 const App = () => {
   return (
@@ -23,9 +25,10 @@ const App = () => {
       <div>
         <BrowserRouter>
           <Navbar />
-          <div className='flex-grow mt-15'>
+          <div className='flex-grow mt-30'>
             <Routes>
               <Route path='/' element={<Home />} />
+              <Route path='/build_your_world' element={<BuildYourWorld/>}/>
               <Route path="/the_ckabirla_group" element={<TheCKABirlaGroup />} />
               <Route path="/about_birlanu" element={<AboutBirlaNu />} />
               <Route path="/chairmans_message" element={<ChairmansMessage />} />
@@ -41,6 +44,7 @@ const App = () => {
               <Route path="/corporate_information" element={<CorporateInformation />} />
             </Routes>
           </div>
+          <Footer/>
         </BrowserRouter>
       </div>
     </LenisScroll>

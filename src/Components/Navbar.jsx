@@ -6,6 +6,7 @@ const navItems = [
     {
         label: "Corporate Overview",
         submenu: [
+            { label: "Build Your World" },
             { label: "The CKABirla Group" },
             { label: "About BirlaNu" },
             { label: "Chairman's Message" },
@@ -132,7 +133,7 @@ export default function Navbar() {
             {/* Main Navigation Header */}
             <nav className="fixed top-0 w-full z-50">
                 <div className="bg-white/90 backdrop-blur-xl border-b border-[#f48497]/20 shadow-lg">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="marginal mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center justify-between h-16">
                             {/* Logo */}
                             <div className="flex-shrink-0">
@@ -156,7 +157,6 @@ export default function Navbar() {
                                         : 'text-[#3e4744] hover:text-[#f48497]'
                                         }`}
                                 >
-                                    <Home className="mr-2 h-4 w-4" />
                                     Home
                                 </button>
 
@@ -192,7 +192,7 @@ export default function Navbar() {
                                     href="#"
                                     className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f48497] hover:bg-[#f48497]/80 rounded-lg backdrop-blur-sm transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
                                 >
-                                    Annual Report 2024-25
+                                    <span className="text-black px-1">Annual Report</span>2024-25
                                     <ExternalLink className="ml-2 h-4 w-4" />
                                 </a>
 
