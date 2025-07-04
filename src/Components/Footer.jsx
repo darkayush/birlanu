@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="flex items-center space-x-4">
               <a href="/" className="block">
                 <img
-                  src="logo.png"
+                  src="image.png"
                   alt="BirlaNu Logo"
                   className="w-40 object-contain filter brightness-0 invert"
                 />

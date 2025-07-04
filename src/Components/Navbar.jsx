@@ -133,7 +133,7 @@ export default function Navbar() {
             {/* Main Navigation Header */}
             <nav className="fixed top-0 w-full z-50">
                 <div className="bg-white/90 backdrop-blur-xl border-b border-[#f48497]/20 shadow-lg">
-                    <div className="marginal mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className=" mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center justify-between h-16">
                             {/* Logo */}
                             <div className="flex-shrink-0">
@@ -142,7 +142,7 @@ export default function Navbar() {
                                     className="flex items-center group"
                                 >
                                     <div className="transition-all duration-300">
-                                        <img src="logo.png" alt="" className="w-40" />
+                                        <img src="image.png" alt="" className="w-40" />
                                     </div>
                                 </button>
                             </div>

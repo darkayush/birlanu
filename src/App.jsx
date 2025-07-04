@@ -25,7 +25,7 @@ const App = () => {
       <div>
         <BrowserRouter>
           <Navbar />
-          <div className='flex-grow mt-30'>
+          <div className='flex-grow md:mt-16 mt-20'>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/build_your_world' element={<BuildYourWorld/>}/>
