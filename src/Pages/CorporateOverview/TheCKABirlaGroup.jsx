@@ -4,7 +4,7 @@ const TheCKABirlaGroup = () => {
   return (
     <div className='marginal'>
       <div className=''>
-        <h1 className='text-[#646b63] mb-10 md:text-5xl text-3xl'>ABOUT THE CKA BIRLA GROUP</h1>
+        <h1 className='text-[#646b63] mb-10 md:text-5xl text-3xl font-semibold'>ABOUT THE CKA BIRLA GROUP</h1>
         <p className='text-[#4d4d4f] mb-5 md:text-lg'>
           For over 170 years, we have been creating long term value through pioneering ideas and
           building trust.
@@ -30,6 +30,9 @@ const TheCKABirlaGroup = () => {
           <br />
           We are the <span className='font-semibold'>CKA Birla Group</span>
         </p>
+      </div>
+      <div>
+        <img src="CKABirlaGroup\image.png" alt="" />
       </div>
     </div>
   )

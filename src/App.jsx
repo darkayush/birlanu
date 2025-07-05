@@ -25,7 +25,7 @@ const App = () => {
       <div>
         <BrowserRouter>
           <Navbar />
-          <div className='flex-grow md:mt-16 mt-20'>
+          <div className='flex-grow md:mt-16 mt-15'>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/build_your_world' element={<BuildYourWorld/>}/>
@@ -36,7 +36,7 @@ const App = () => {
               <Route path="/financial_highlights" element={<FinancialHighlights />} />
               <Route path="/portfolio_of_consumer_offerings" element={<PortfolioOfConsumerOfferings />} />
               <Route path="/intentional_innovation" element={<IntentionalInnovation />} />
-              <Route path="/technology_and_digital" element={<TechnologyAndDigital />} />
+              <Route path="/technology_digital" element={<TechnologyAndDigital />} />
               <Route path="/sustainability" element={<Sustainability />} />
               <Route path="/human_capital" element={<HumanCapital />} />
               <Route path="/board_of_directors" element={<BoardOfDirectors />} />

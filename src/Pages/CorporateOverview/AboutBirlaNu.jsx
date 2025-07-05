@@ -24,12 +24,12 @@ const AboutBirlaNu = () => {
                   Germany, and a market presence in 80+ countries, we adhere to the highest global quality
                   standards, holding certifications such as GreenPro, IGBC, PEFC, Blue Angel, and EPD. Our
                   products are integral to commercial, healthcare, hospitality, residential, and infrastructure
-                  projects worldwide
+                  projects worldwide.
                   <br />
                   <br />
                   Powered by over 5,000 employees and a strong partner ecosystem, BirlaNu is ranked 12th in
                   India’s Best Companies to Work For by Great Place to Work® 2024 and has been recognised
-                  with accolades such as Iconic Brand, Asia’s Most Trusted Brand, and Super Brand awards
+                  with accolades such as Iconic Brand, Asia’s Most Trusted Brand, and Super Brand awards.
                 </p>
               </div>
               <div className="md:w-1/2 bg-white p-2 md:translate-y-[5.5%] mb-5">

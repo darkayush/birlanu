@@ -112,8 +112,9 @@ const PortfolioOfConsumerOfferings = () => {
         "Tile Adhesives",
         "Tile Grouts", 
         "Surface Cleaners",
+        "Accessories",
         "Plasters (Block Jointing Mortar, Ready Mix Plasters, Gypsum)",
-        "Accessories"
+        
       ],
       imageSrc: "Portfolio/Chemical.png",
       imageAlt: "Construction Chemicals",

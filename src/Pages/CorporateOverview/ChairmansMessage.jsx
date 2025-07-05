@@ -54,14 +54,14 @@ const ChairmansMessage = () => {
               partner you trust in building the future.
               BirlaNu is inspired by the people we serve
               and driven by a passion for continuous
-              growth. Rooted in connection, creativity and
-              sustainability, we empower homeowners, builders and designers
+              growth.
             </p>
           </div>
         </div>
         <div>
           <p className='text-[#4d4d4f] mb-5 md:text-lg'>
-
+            Rooted in connection, creativity and
+            sustainability, we empower homeowners, builders and designers
             to bring their vision
             to life, crafting innovative buildings and
             structures that stand the test of time. We’re
