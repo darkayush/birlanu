@@ -229,7 +229,7 @@ const PortfolioOfConsumerOfferings = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="min-h-screen md:bg-[url('Portfolio/bg.png')] bg-cover">
+      <div className="min-h-screen md:bg-[url('Portfolio/bg.png')] bg-cover bg-top">
         <div className='marginal'>
           <h1 className="text-[#3d4744] font-semibold md:mb-5 mb-5 md:text-5xl text-3xl">
             PORTFOLIO OF CONSUMER OFFERINGS

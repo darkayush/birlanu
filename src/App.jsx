@@ -18,12 +18,14 @@ import CorporateInformation from './Pages/CorporateOverview/CorporateInformation
 import Footer from './Components/Footer';
 import Home from './Pages/CorporateOverview/Home';
 import BuildYourWorld from './Pages/CorporateOverview/BuildYourWorld';
+import ScrollToTop from './Components/ScrollToTop';
 
 const App = () => {
   return (
     <LenisScroll>
       <div>
         <BrowserRouter>
+        <ScrollToTop/>
           <Navbar />
           <div className='flex-grow md:mt-16 mt-15'>
             <Routes>

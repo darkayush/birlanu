@@ -6,49 +6,49 @@ const BoardOfDirectors = () => {
       name: "CK Birla",
       role: "Chairman",
       image: "BOD/CK B.png",
-      icons: ["/icons/nomination.svg", "/icons/stakeholder.svg"],
+      icons: ["BOD/Nomination.png", "BOD/Stakeholders-Icon (1).png"],
     },
     {
       name: "Amita Birla",
       role: "Non-executive Director",
       image: "BOD/Amita.png",
-      icons: ["/icons/csr.svg"],
+      icons: ["BOD/Corporate.png"],
     },
     {
       name: "Akshat Seth",
       role: "Managing Director & Chief Executive Officer",
       image: "BOD/Akshat.png",
-      icons: ["/icons/stakeholder.svg", "/icons/csr.svg", "/icons/risk.svg"],
+      icons: ["BOD/Stakeholders-Icon (1).png", "BOD/Corporate.png", "BOD/Risk-Management-Icon (1).png"],
     },
     {
       name: "Desh Deepak Khetrapal",
       role: "Non-executive Director",
       image: "BOD/Deepak Khetripal.png",
-      icons: ["/icons/audit.svg", "/icons/csr.svg", "/icons/risk.svg"],
+      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Corporate.png", "BOD/Risk-Management-Icon (1).png"],
     },
     {
       name: "Dr. Arvind Sahay",
       role: "Independent Director",
       image: "BOD/Prof. Arvind Sahay - cutout.png",
-      icons: ["/icons/audit.svg", "/icons/nomination.svg", "/icons/risk.svg"],
+      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Nomination.png", "BOD/Risk-Management-Icon (1).png"],
     },
     {
       name: "Sunil Bhumralkar",
       role: "Independent Director",
       image: "BOD/Sunil.png",
-      icons: ["/icons/audit.svg", "/icons/stakeholder.svg", "/icons/risk.svg", "/icons/csr.svg"],
+      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Stakeholders-Icon (1).png", "BOD/Risk-Management-Icon (1).png", "BOD/Corporate.png"],
     },
     {
       name: "Nidhi Killawala",
       role: "Independent Director",
       image: "BOD/Nidhi.png",
-      icons: ["/icons/risk.svg", "/icons/stakeholder.svg", "/icons/nomination.svg", "/icons/audit.svg"],
+      icons: ["BOD/Risk-Management-Icon (1).png", "BOD/Stakeholders-Icon (1).png", "BOD/Nomination.png", "BOD/Audit-committee-Icon (1).png"],
     },
     {
       name: "Prof. Janat Shah",
       role: "Independent Director",
       image: "BOD/janat.png",
-      icons: ["/icons/audit.svg", "/icons/risk.svg"],
+      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Risk-Management-Icon (1).png"],
     },
   ];
 
@@ -83,7 +83,7 @@ const BoardOfDirectors = () => {
                 <p className="text-md text-gray-600">{person.role}</p>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {person.icons.map((icon, i) => (
-                    <img src={icon} key={i} alt="icon" className="w-6 h-6" />
+                    <img src={icon} key={i} alt="icon" className="w-10 h-10" />
                   ))}
                 </div>
               </div>
@@ -97,19 +97,19 @@ const BoardOfDirectors = () => {
             Nomination and Remuneration cum Compensation committee
           </div>
           <div className="flex items-center justify-center gap-2">
-            <img src="/icons/stakeholder.svg" className="w-15 h-15" alt="Stakeholders" />
+            <img src="BOD/Stakeholders-Icon (1).png" className="w-15 h-15" alt="Stakeholders" />
             Stakeholders’ Relationship committee
           </div>
           <div className="flex items-center justify-center gap-2">
-            <img src="BOD\Corporate.png" className="w-15 h-15" alt="CSR" />
+            <img src="BOD/Corporate.png" className="w-15 h-15" alt="CSR" />
             Corporate Social Responsibility committee
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <img src="/icons/risk.svg" className="w-15 h-15" alt="Risk" />
+          <div className="flex items-center justify-start gap-2">
+            <img src="BOD/Risk-Management-Icon (1).png" className="w-15 h-15" alt="Risk" />
             Risk Management committee
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <img src="/icons/audit.svg" className="w-15 h-15" alt="Audit" />
+          <div className="flex items-center justify-start gap-2">
+            <img src="BOD\Audit-committee-Icon (1).png" className="w-15 h-15" alt="Audit" />
             Audit committee
           </div>
         </div>

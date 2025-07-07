@@ -148,8 +148,8 @@ const HumanCapital = () => {
           </div>
         </div>
       </div>
-      <div>
-        <img src="" alt="" />
+      <div className='md:p-10 mt-10'>
+        <img src="HumanCapital/image.png" alt="" />
       </div>
     </div>
   )

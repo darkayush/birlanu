@@ -93,7 +93,7 @@ const BirlaNuKeyStrengths = () => {
 
             {/* Content */}
             <div className="relative z-10 py-16 px-4">
-                <div className="max-w-7xl mx-auto">
+                <div className="mx-auto">
                     {/* Header */}
                     <div className="text-left mb-16">
                         <h1 className="text-4xl text-center md:text-5xl font-semibold text-[#3d4744] mb-4">
@@ -115,7 +115,7 @@ const BirlaNuKeyStrengths = () => {
                                     transitionDelay: `${index * 150}ms`
                                 }}
                             >
-                                <div className="bg-white/9  0 p-6 shadow-md border border-gray-100/50 h-full">
+                                <div className="bg-white/90 p-6 shadow-md border border-gray-100/50 h-full">
                                     {/* Title */}
                                     <h3 className="text-lg font-semibold text-[#231e21] mb-6 leading-tight">
                                         {strength.title}
