@@ -1,6 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Sustainability = () => {
+  const [expandedCard, setExpandedCard] = useState(null)
+
+  const cardsData = [
+    {
+      id: 1,
+      image: "Sustainability/1.png",
+      title: "Live Love Laugh – rural mental health program",
+      description: "Outcome: Positively impacted over 6500 individuals through mental well-being initiatives.",
+      fullContent: `Now in its second year, our rural mental health program — run in partnership with the Live Love Laugh Foundation — continues to bring meaningful change to thousands of lives across three rural locations in India.
+
+Through a comprehensive approach that includes psychiatric treatment, rehabilitation, and community - wide mental health awareness, the initiative has significantly improved the well-being of its beneficiaries. Many individuals have not only achieved better mental health but also become financially independent and active participants in their communities.`,
+      beneficiaries: "6,300+",
+      beneficiariesLabel: "Beneficiaries"
+    },
+    {
+      id: 2,
+      image: "Sustainability/2.png",
+      title: "Child Survival India: Mobile Medical Unit (MMU)",
+      description: "Outcome: Healthcare access for vulnerable populations enabling early detection of diseases.",
+      fullContent: `In partnership with Child Survival India, our Mobile Medical Unit continues to bring essential healthcare services to underserved rural communities, improving health outcomes and saving lives. The unit offers free, high-quality outpatient consultations, medication, and regular health awareness sessions — enabling early detection and timely treatment of medical conditions.
+
+This year, the initiative took on added significance through focused community engagement during key health observances such as Nutrition Month, World Heart Day etc. These efforts are making a lasting difference in building healthier, more informed communities across rural India.`,
+      beneficiaries: "20,000+",
+      beneficiariesLabel: "Beneficiaries"
+    },
+    {
+      id: 3,
+      image: "Sustainability/3.png",
+      title: "Education initiatives through public private partnerships",
+      description: "Outcome: Increased schooling rates and enhanced digital literacy.",
+      fullContent: `Our education initiatives are creating lasting impact by improving school infrastructure and expanding digital access for young learners. Through the construction and renovation of classrooms and facilities, we are fostering safe, inclusive, and secure learning environments — encouraging increased school enrolment and regular attendance.
+
+Recognizing the growing importance of digital literacy, our programs also equip students with foundational knowledge in emerging fields helping bridge the digital divide and preparing them for the future.`,
+      beneficiaries: "350+",
+      beneficiariesLabel: "Beneficiaries"
+    },
+    {
+      id: 4,
+      image: "Sustainability/4.png",
+      title: "Sambhav Foundation – Skill building programs",
+      description: "Outcome: Livelihood training through skill-based learning.",
+      fullContent: `In partnership with the Sambhav Foundation, we have launched livelihood skill training initiative aimed at empowering plumbers, masons, and painters across multiple cities. The program combines structured classroom instruction with industry-recognized certification, equipping participants with practical, job-ready skills.
+
+By focusing on productivity, efficiency, and technical know-how, the initiative enhances on-the-job performance while opening doors to better employment prospects and higher wages.`,
+      beneficiaries: "3,200+",
+      beneficiariesLabel: "Beneficiaries"
+    }
+  ]
+
+  const toggleCard = (cardId) => {
+    setExpandedCard(expandedCard === cardId ? null : cardId)
+  }
+
   return (
     <div>
       <div className="relative w-full min-h-screen">
@@ -18,7 +71,7 @@ const Sustainability = () => {
                 <h1 className="text-4xl md:text-5xl font-semibold text-[#646b64] mb-5">
                   SUSTAINABILITY
                 </h1>
-                <h2 className='text-[#646b64] md:text-lg font-semibold mb-5'>Sustainability isn’t a choice; it’s a responsibility we own.</h2>
+                <h2 className='text-[#646b64] md:text-lg font-semibold mb-5'>Sustainability isn't a choice; it's a responsibility we own.</h2>
                 <p className="text-[#646b64] md:text-lg">
                   We are committed to sustainable growth by protecting the environment, ensuring employee
                   well-being and upholding the highest safety standards while strictly complying with all
@@ -79,6 +132,7 @@ const Sustainability = () => {
           </div>
         </div>
       </div>
+
       <div className="relative w-full min-h-screen">
         <div
           className="absolute inset-0 w-full h-full md:bg-cover md:bg-center bg-[70%] bg-no-repeat"
@@ -114,7 +168,7 @@ const Sustainability = () => {
                 </p>
               </div>
             </div>
-            <div className='flex xl:flex-col md:gap-20 gap-10 mt-5 xl:gap-1'>
+            <div className='flex xl:flex-col md:gap-20 gap-10 mt-5 xl:gap-2'>
               <div className='flex xl:flex-col xl:items-end'>
                 <div className='flex flex-col items-center'>
                   <img src="Sustainability/icon1.png" alt="" className='w-20' />
@@ -133,11 +187,69 @@ const Sustainability = () => {
           </div>
         </div>
       </div>
-      <div className='marginal'>
-        cards
+
+      <div className="marginal py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6">
+          {cardsData.map((card) => (
+            <div
+              key={card.id}
+              className={`bg-white transition-all duration-500 ease-in-out ${expandedCard === card.id ? 'md:col-span-2' : ''
+                }`}
+            >
+              <div className="w-full">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className={`w-full object-cover transition-all duration-500 ${expandedCard === card.id ? 'h-64' : 'h-48'
+                    }`}
+                />
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-[#646b64] mb-3">
+                  {card.title}
+                </h3>
+
+                <p className="text-[#4d4d4f] mb-4 text-lg">
+                  {card.description}
+                </p>
+
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedCard === card.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                >
+                  <div className="mb-4">
+                    <p className="text-[#4d4d4f] text-lg leading-relaxed whitespace-pre-line">
+                      {card.fullContent}
+                    </p>
+                  </div>
+
+                  <div className="border-t border-gray-200 pt-4">
+                    <div className="flex flex-col items-center">
+                      <h4 className="text-3xl font-bold text-[#414550] border-b-2 border-[#414550]">
+                        {card.beneficiaries}
+                      </h4>
+                      <p className="text-[#4d4d4f] text-lg mt-1">
+                        {card.beneficiariesLabel}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => toggleCard(card.id)}
+                  className="text-[#215e9e] text-lg font-medium hover:underline transition-colors"
+                >
+                  {expandedCard === card.id ? 'Read Less' : 'Read More'}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+
       <div className='marginal flex md:flex-row flex-col md:gap-10 gap-5'>
-        <div className='md:w-1/2 md:h-[85vh] h-[40vh] overflow-hidden mb-5'>
+        <div className='md:w-1/2 md:h-[85vh] h-[40vh] overflow-hidden mb-5 bg-white p-2'>
           <img src="Sustainability/governance.png" alt="" className='w-full h-full object-cover object-top' />
         </div>
         <div className='md:w-1/2'>
@@ -153,7 +265,7 @@ const Sustainability = () => {
             guide how we operate and how decisions are evaluated.
             <br />
             <br />
-            To support this, a set of defined policies and committee-led oversight mechanisms are in
+            To support this, a set of defined policies and committee-led oversight mechanilgs are in
             place to manage areas such as risk, ethics, sustainability, and stakeholder relations. These
             frameworks are reviewed regularly to stay aligned with regulatory developments and
             evolving expectations.

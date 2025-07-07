@@ -57,7 +57,7 @@ export default function Navbar() {
     const [activeSubmenu, setActiveSubmenu] = useState(null);
     const [openAccordions, setOpenAccordions] = useState([]);
     const dropdownRef = useRef();
-    
+
     // React Router DOM hooks
     const navigate = useNavigate();
     const location = useLocation();
@@ -116,11 +116,10 @@ export default function Navbar() {
                 <button
                     key={subIndex}
                     onClick={() => handleNavigation(getPathFromItem(subItem.label))}
-                    className={`w-full px-4 py-3 text-sm text-left transition-all duration-200 rounded-lg mx-2 ${
-                        currentPath === getPathFromItem(subItem.label)
-                            ? 'text-[#f48497] bg-[#f48497]/10'
-                            : 'text-[#3e4744] hover:bg-[#f48497]/10 hover:text-[#f48497]'
-                    }`}
+                    className={`w-full px-4 py-3 text-sm text-left transition-all duration-200 rounded-lg mx-2 ${currentPath === getPathFromItem(subItem.label)
+                        ? 'text-[#f48497] bg-[#f48497]/10'
+                        : 'text-[#3e4744] hover:bg-[#f48497]/10 hover:text-[#f48497]'
+                        }`}
                 >
                     {subItem.label}
                 </button>
@@ -130,12 +129,10 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Main Navigation Header */}
             <nav className="fixed top-0 w-full z-50">
                 <div className="bg-white/90 backdrop-blur-xl border-b border-[#f48497]/20 shadow-lg">
-                    <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="w-[86%] mx-auto">
                         <div className="flex items-center justify-between h-16">
-                            {/* Logo */}
                             <div className="flex-shrink-0">
                                 <button
                                     onClick={() => handleNavigation('/')}
@@ -150,7 +147,7 @@ export default function Navbar() {
                             {/* Desktop Navigation */}
                             <div className="hidden lg:flex items-center space-x-8" ref={dropdownRef}>
                                 {/* Home Button */}
-                                <button
+                                {/* <button
                                     onClick={() => handleNavigation('/')}
                                     className={`flex items-center px-3 py-4 text-sm font-medium transition-all duration-200 ${currentPath === <Home/>
                                         ? 'text-[#f48497] border-b-2 border-[#f48497]'
@@ -158,7 +155,7 @@ export default function Navbar() {
                                         }`}
                                 >
                                     Home
-                                </button>
+                                </button> */}
 
                                 {navItems.map((item, index) => (
                                     <div key={index} className="relative">
@@ -190,33 +187,13 @@ export default function Navbar() {
                                 <a
                                     target="_blank"
                                     href="#"
-                                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f48497] hover:bg-[#f48497]/80 rounded-lg backdrop-blur-sm transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+                                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#f48497] hover:bg-[#f48497]/80 backdrop-blur-sm transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
                                 >
                                     <span className="text-black px-1">Annual Report</span>2024-25
                                     <ExternalLink className="ml-2 h-4 w-4" />
                                 </a>
+                                <a target="_blank" href="https://www.ckabirlagroup.com/"><img src="logo.png" alt="" className="w-45" /></a>
 
-                                {/* Social Icons */}
-                                <div className="flex justify-center space-x-4">
-                                    <a
-                                        href="#"
-                                        className="w-10 h-10 rounded-full bg-[#3e4744]/10 flex items-center justify-center text-[#3e4744] hover:bg-[#f48497] hover:text-white transition-all duration-200 hover:scale-110"
-                                    >
-                                        <Users className="h-5 w-5" />
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="w-10 h-10 rounded-full bg-[#3e4744]/10 flex items-center justify-center text-[#3e4744] hover:bg-[#f48497] hover:text-white transition-all duration-200 hover:scale-110"
-                                    >
-                                        <Award className="h-5 w-5" />
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="w-10 h-10 rounded-full bg-[#3e4744]/10 flex items-center justify-center text-[#3e4744] hover:bg-[#f48497] hover:text-white transition-all duration-200 hover:scale-110"
-                                    >
-                                        <Mail className="h-5 w-5" />
-                                    </a>
-                                </div>
                             </div>
 
                             {/* Mobile menu button */}
@@ -245,7 +222,7 @@ export default function Navbar() {
                         {/* Mobile Annual Report */}
                         <a
                             href="#"
-                            className="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white bg-[#f48497] hover:bg-[#f48497]/80 rounded-lg backdrop-blur-sm transition-all duration-200 mb-4 shadow-lg"
+                            className="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white bg-[#f48497] hover:bg-[#f48497]/80 backdrop-blur-sm transition-all duration-200 mb-4 shadow-lg"
                         >
                             Annual Report 2024-25
                             <ExternalLink className="ml-2 h-4 w-4" />
@@ -282,29 +259,8 @@ export default function Navbar() {
                                 )}
                             </div>
                         ))}
-
-                        {/* Mobile Social Links */}
-                        <div className="pt-4 mt-4 border-t border-[#f48497]/20">
-                            <div className="flex justify-center space-x-4">
-                                <a
-                                    href="#"
-                                    className="w-10 h-10 rounded-full bg-[#3e4744]/10 flex items-center justify-center text-[#3e4744] hover:bg-[#f48497] hover:text-white transition-all duration-200 hover:scale-110"
-                                >
-                                    <Users className="h-5 w-5" />
-                                </a>
-                                <a
-                                    href="#"
-                                    className="w-10 h-10 rounded-full bg-[#3e4744]/10 flex items-center justify-center text-[#3e4744] hover:bg-[#f48497] hover:text-white transition-all duration-200 hover:scale-110"
-                                >
-                                    <Award className="h-5 w-5" />
-                                </a>
-                                <a
-                                    href="#"
-                                    className="w-10 h-10 rounded-full bg-[#3e4744]/10 flex items-center justify-center text-[#3e4744] hover:bg-[#f48497] hover:text-white transition-all duration-200 hover:scale-110"
-                                >
-                                    <Mail className="h-5 w-5" />
-                                </a>
-                            </div>
+                        <div className="bg-[#ffffff] flex items-center justify-center">
+                            <a target="_blank" href="https://www.ckabirlagroup.com/"><img src="logo.png" alt="" className="w-45" /></a>
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ const BuildYourWorld = () => {
         <div className="absolute inset-0" />
         <div className="relative z-10 h-full flex flex-col justify-end items-center">
           <div className="marginal">
-            <div className='bg-white/80 p-10 md:mt-15 mt-5 mb-5'>
+            <div className='bg-white/90 p-10 md:mt-15 mt-5 mb-5'>
               <div className="">
                 <h1 className="text-4xl md:text-5xl font-semibold text-[#646b64] mb-4">
                   BUILD YOUR WORLD

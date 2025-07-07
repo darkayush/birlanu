@@ -115,7 +115,7 @@ const BirlaNuKeyStrengths = () => {
                                     transitionDelay: `${index * 150}ms`
                                 }}
                             >
-                                <div className="bg-white/80 p-6 shadow-md border border-gray-100/50 h-full">
+                                <div className="bg-white/9  0 p-6 shadow-md border border-gray-100/50 h-full">
                                     {/* Title */}
                                     <h3 className="text-lg font-semibold text-[#231e21] mb-6 leading-tight">
                                         {strength.title}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, ChevronDown, ChevronUp, Download } from 'lucide-react';
-import { FaLinkedin, FaXTwitter, FaYoutube, FaEnvelope } from 'react-icons/fa6'
+import { FaLinkedin, FaXTwitter, FaYoutube, FaEnvelope, FaWhatsapp, FaFacebook } from 'react-icons/fa6'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -40,7 +40,7 @@ const Footer = () => {
       {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          
+
           {/* Company Logo and Info */}
           <div className="md:col-span-2 space-y-6">
             <div className="flex items-center space-x-4">
@@ -57,38 +57,56 @@ const Footer = () => {
                 BirlaNu Limited
               </h3>
               <p className="text-sm text-neutral-400 max-w-md">
-                A leading company in the CK Birla Group, committed to innovation, 
-                sustainability, and excellence in all our endeavors.
+                BirlaNu Limited (formerly HIL Limited), part of the multibillion dollar CKA Birla Group, is a home and building products and services company. We serve homeowners, builders and designers with sustainable, innovative solutions across pipes, construction chemicals, putty, roofs, walls and floors.
               </p>
               {/* Social Media Icons */}
               <div className="flex items-center space-x-4 pt-2">
-                <a 
-                  href="#" 
+                <a
+                  href="http://linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fbirlanu-limited%2Fabout%2F%3FviewAsMember%3Dtrue"
+                  target='_blank'
                   className="p-2 bg-neutral-700 hover:bg-blue-600 rounded-lg transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
                   <FaLinkedin className="w-5 h-5" />
                 </a>
-                <a 
-                  href="#" 
+                <a
+                  href="https://x.com/birlanu"
+                  target='_blank'
                   className="p-2 bg-neutral-700 hover:bg-gray-900 rounded-lg transition-colors duration-200"
                   aria-label="X (Twitter)"
                 >
                   <FaXTwitter className="w-5 h-5" />
                 </a>
                 <a
-                  href="#" 
+                  href="https://www.youtube.com/@birlanu_buildyourworld"
+                  target='_blank'
                   className="p-2 bg-neutral-700 hover:bg-red-600 rounded-lg transition-colors duration-200"
                   aria-label="YouTube"
                 >
                   <FaYoutube className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:info@birlanu.com" 
+                  href="mailto:customer.care@birlanu.com"
                   className="p-2 bg-neutral-700 hover:bg-blue-500 rounded-lg transition-colors duration-200"
                   aria-label="Email"
                 >
                   <FaEnvelope className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/birlanubuildyourworld/"
+                  target='_blank'
+                  className="p-2 bg-neutral-700 hover:bg-blue-700 rounded-lg transition-colors duration-200"
+                  aria-label="YouTube"
+                >
+                  <FaFacebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=918977754652&text=Hi"
+                  target='_blank'
+                  className="p-2 bg-neutral-700 hover:bg-green-400 rounded-lg transition-colors duration-200"
+                  aria-label="YouTube"
+                >
+                  <FaWhatsapp className="w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -139,7 +157,7 @@ const Footer = () => {
           {/* Download Documents Accordions */}
           <div className="space-y-4">
             <h4 className="text-base font-medium text-white">Download Documents</h4>
-            
+
             {/* Statutory Reports Accordion */}
             <div className="border border-neutral-600 rounded-lg overflow-hidden">
               <button
@@ -216,13 +234,13 @@ const Footer = () => {
             <div className="text-sm text-neutral-400">
               © {new Date().getFullYear()} BirlaNu Limited. All rights reserved.
             </div>
-            
+
             {/* Developer Credit */}
             <div className="flex items-center space-x-2 text-sm text-neutral-400">
               <span>Website by</span>
               <a
-                href="https://kalolwala.com/" 
-                target="_blank" 
+                href="https://kalolwala.com/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1 hover:text-neutral-300 transition-colors duration-200"
               >
