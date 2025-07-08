@@ -82,7 +82,7 @@ const LegacyTimeline = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('About/bg2.png')",
+                    backgroundImage: "url('About/bg2.webp')",
                     filter: 'brightness(0.8)'
                 }}
             />

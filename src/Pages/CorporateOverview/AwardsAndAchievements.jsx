@@ -4,42 +4,42 @@ import { motion } from 'framer-motion'
 const AwardsAndAchievements = () => {
   const awards = [
     {
-      img: "Award/BirlaNu_inside_02das.07asd.fasddgasd202sddfgf5sdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02das.07asd.fasddgasd202sddfgf5sdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Brand of the Year 2025 - Roofing and Ceiling Ideas (INEX Reality +)",
       desc: "Award received for strategic leadership at the ET edge CEO Summit 2024",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddgasd202sddfgf5sdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddgasd202sddfgf5sdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Impactful CEO - ET Edge CEO Summit 2024",
       desc: "Brand of the Year 2025 - Roofs and Walls Ideas (INEX Reality+) Recognized as the Leading brand in roofs and walls solutions for 2025",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5sdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5sdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Legacy Leader in Building Material Solutions - Acheivers Award 2024",
       desc: "Awarded for leadership and sustained presence in the building Material Sector",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5fghsdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5fghsdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Top 50 Great People Managers™ (2025)",
       desc: "Akshat Seth, Managing Director and Chief Executive Officer, BirlaNu, recognised among India’s top 50 people managers (CEOs/MDs/Founders) by the Great Manager Institute®",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sddfgf5sdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sddfgf5sdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Most Trusted Brands of 2024-2025",
       desc: "Listed Among India’s most trusted brands for the year 2024-2025",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sddfgdfgf5sdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sddfgdfgf5sdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "GreenPro Award 2023-25",
       desc: "Accredited with the GreenPro certification for sustainable product practice",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5fgdfghsdg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5fgdfghsdg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Great Place to work, India",
       desc: "Recertified from March 2024 to March 2025",
     },
     {
-      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5fgdfghsddfgg v2 pfdgsdage (ddddd038df-0were391).png",
+      img: "Award/BirlaNu_inside_02asfdas.07asd.fasddfgdgasd202sdddfgfgdfgf5fgdfghsddfgg v2 pfdgsdage (ddddd038df-0were391).webp",
       title: "Superbrand 2025",
       desc: "Awarded the Superbrand title for 2025 in recognition of brand excellence",
     },

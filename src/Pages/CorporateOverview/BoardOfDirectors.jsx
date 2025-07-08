@@ -5,50 +5,50 @@ const BoardOfDirectors = () => {
     {
       name: "CK Birla",
       role: "Chairman",
-      image: "BOD/CK B.png",
-      icons: ["BOD/Nomination.png", "BOD/Stakeholders-Icon (1).png"],
+      image: "BOD/CK B.webp",
+      icons: ["BOD/Nomination.webp", "BOD/Stakeholders-Icon (1).webp"],
     },
     {
       name: "Amita Birla",
       role: "Non-executive Director",
-      image: "BOD/Amita.png",
-      icons: ["BOD/Corporate.png"],
+      image: "BOD/Amita.webp",
+      icons: ["BOD/Corporate.webp"],
     },
     {
       name: "Akshat Seth",
       role: "Managing Director & Chief Executive Officer",
-      image: "BOD/Akshat.png",
-      icons: ["BOD/Stakeholders-Icon (1).png", "BOD/Corporate.png", "BOD/Risk-Management-Icon (1).png"],
+      image: "BOD/Akshat.webp",
+      icons: ["BOD/Stakeholders-Icon (1).webp", "BOD/Corporate.webp", "BOD/Risk-Management-Icon (1).webp"],
     },
     {
       name: "Desh Deepak Khetrapal",
       role: "Non-executive Director",
-      image: "BOD/Deepak Khetripal.png",
-      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Corporate.png", "BOD/Risk-Management-Icon (1).png"],
+      image: "BOD/Deepak Khetripal.webp",
+      icons: ["BOD/Audit-committee-Icon (1).webp", "BOD/Corporate.webp", "BOD/Risk-Management-Icon (1).webp"],
     },
     {
       name: "Dr. Arvind Sahay",
       role: "Independent Director",
-      image: "BOD/Prof. Arvind Sahay - cutout.png",
-      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Nomination.png", "BOD/Risk-Management-Icon (1).png"],
+      image: "BOD/Prof. Arvind Sahay - cutout.webp",
+      icons: ["BOD/Audit-committee-Icon (1).webp", "BOD/Nomination.webp", "BOD/Risk-Management-Icon (1).webp"],
     },
     {
       name: "Sunil Bhumralkar",
       role: "Independent Director",
-      image: "BOD/Sunil.png",
-      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Stakeholders-Icon (1).png", "BOD/Risk-Management-Icon (1).png", "BOD/Corporate.png"],
+      image: "BOD/Sunil.webp",
+      icons: ["BOD/Audit-committee-Icon (1).webp", "BOD/Stakeholders-Icon (1).webp", "BOD/Risk-Management-Icon (1).webp", "BOD/Corporate.webp"],
     },
     {
       name: "Nidhi Killawala",
       role: "Independent Director",
-      image: "BOD/Nidhi.png",
-      icons: ["BOD/Risk-Management-Icon (1).png", "BOD/Stakeholders-Icon (1).png", "BOD/Nomination.png", "BOD/Audit-committee-Icon (1).png"],
+      image: "BOD/Nidhi.webp",
+      icons: ["BOD/Risk-Management-Icon (1).webp", "BOD/Stakeholders-Icon (1).webp", "BOD/Nomination.webp", "BOD/Audit-committee-Icon (1).webp"],
     },
     {
       name: "Prof. Janat Shah",
       role: "Independent Director",
-      image: "BOD/janat.png",
-      icons: ["BOD/Audit-committee-Icon (1).png", "BOD/Risk-Management-Icon (1).png"],
+      image: "BOD/janat.webp",
+      icons: ["BOD/Audit-committee-Icon (1).webp", "BOD/Risk-Management-Icon (1).webp"],
     },
   ];
 
@@ -93,23 +93,23 @@ const BoardOfDirectors = () => {
 
         <div className="mt-10 grid sm:grid-cols-3 gap-6 text-md text-[#3d4340]">
           <div className="flex items-center justify-center gap-2">
-            <img src="BOD\Nomination.png" className="w-15 h-15" alt="Nomination" />
+            <img src="BOD\Nomination.webp" className="w-15 h-15" alt="Nomination" />
             Nomination and Remuneration cum Compensation committee
           </div>
           <div className="flex items-center justify-center gap-2">
-            <img src="BOD/Stakeholders-Icon (1).png" className="w-15 h-15" alt="Stakeholders" />
+            <img src="BOD/Stakeholders-Icon (1).webp" className="w-15 h-15" alt="Stakeholders" />
             Stakeholders’ Relationship committee
           </div>
           <div className="flex items-center justify-center gap-2">
-            <img src="BOD/Corporate.png" className="w-15 h-15" alt="CSR" />
+            <img src="BOD/Corporate.webp" className="w-15 h-15" alt="CSR" />
             Corporate Social Responsibility committee
           </div>
           <div className="flex items-center justify-start gap-2">
-            <img src="BOD/Risk-Management-Icon (1).png" className="w-15 h-15" alt="Risk" />
+            <img src="BOD/Risk-Management-Icon (1).webp" className="w-15 h-15" alt="Risk" />
             Risk Management committee
           </div>
           <div className="flex items-center justify-start gap-2">
-            <img src="BOD\Audit-committee-Icon (1).png" className="w-15 h-15" alt="Audit" />
+            <img src="BOD\Audit-committee-Icon (1).webp" className="w-15 h-15" alt="Audit" />
             Audit committee
           </div>
         </div>

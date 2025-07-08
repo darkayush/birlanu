@@ -5,8 +5,8 @@ const PortfolioOfConsumerOfferings = () => {
   // Animation variants for alternating directions
   const slideInFromRight = {
     hidden: { opacity: 0, x: 100 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
       transition: { duration: 0.8, ease: "easeOut" }
     }
@@ -14,23 +14,23 @@ const PortfolioOfConsumerOfferings = () => {
 
   const slideInFromLeft = {
     hidden: { opacity: 0, x: -100 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
       transition: { duration: 0.8, ease: "easeOut" }
     }
   }
 
-  const ProductSection = ({ 
-    title, 
-    description, 
-    productRange, 
-    imageSrc, 
-    imageAlt, 
+  const ProductSection = ({
+    title,
+    description,
+    productRange,
+    imageSrc,
+    imageAlt,
     isReversed = false,
-    animationVariant 
+    animationVariant
   }) => (
-    <motion.div 
+    <motion.div
       className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-6 lg:gap-10 items-center mb-12 lg:mb-16`}
       initial="hidden"
       whileInView="visible"
@@ -40,8 +40,8 @@ const PortfolioOfConsumerOfferings = () => {
       {/* Image Section */}
       <div className='w-full lg:w-1/2 flex justify-center items-center'>
         <div className="w-full max-w-md lg:max-w-none">
-          <img 
-            src={imageSrc} 
+          <img
+            src={imageSrc}
             alt={imageAlt}
             className="w-full h-auto object-contain"
           />
@@ -56,11 +56,11 @@ const PortfolioOfConsumerOfferings = () => {
         <div className="text-sm md:text-base lg:text-lg text-[#4d4d4f] leading-relaxed mb-6">
           {description}
         </div>
-        
+
         <h2 className='text-lg md:text-xl text-[#4d4d4f] font-semibold mb-5'>
           Product Range
         </h2>
-        
+
         {/* Responsive Product Range */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {productRange.map((product, index) => (
@@ -93,7 +93,7 @@ const PortfolioOfConsumerOfferings = () => {
         </>
       ),
       productRange: ["Pipes", "Water Tanks", "Fittings"],
-      imageSrc: "Portfolio/Pipes.png",
+      imageSrc: "Portfolio/Pipes.webp",
       imageAlt: "Pipes",
       isReversed: false,
       animationVariant: slideInFromRight
@@ -110,13 +110,13 @@ const PortfolioOfConsumerOfferings = () => {
       ),
       productRange: [
         "Tile Adhesives",
-        "Tile Grouts", 
+        "Tile Grouts",
         "Surface Cleaners",
         "Accessories",
         "Plasters (Block Jointing Mortar, Ready Mix Plasters, Gypsum)",
-        
+
       ],
-      imageSrc: "Portfolio/Chemical.png",
+      imageSrc: "Portfolio/Chemical.webp",
       imageAlt: "Construction Chemicals",
       isReversed: true,
       animationVariant: slideInFromLeft
@@ -143,7 +143,7 @@ const PortfolioOfConsumerOfferings = () => {
         "Primers (Universal, Exterior, Interior, Red Oxide and Yellow Metal)",
         "Universal Stainer"
       ],
-      imageSrc: "Portfolio/Putty.png",
+      imageSrc: "Portfolio/Putty.webp",
       imageAlt: "Putty",
       isReversed: false,
       animationVariant: slideInFromRight
@@ -170,7 +170,7 @@ const PortfolioOfConsumerOfferings = () => {
         "Coloured Steel Roofs",
         "Tools & Accessories"
       ],
-      imageSrc: "Portfolio/Roof.png",
+      imageSrc: "Portfolio/Roof.webp",
       imageAlt: "Roofs",
       isReversed: true,
       animationVariant: slideInFromLeft
@@ -196,7 +196,7 @@ const PortfolioOfConsumerOfferings = () => {
         "Designer Boards and Planks",
         "Panel Jointing Compound"
       ],
-      imageSrc: "Portfolio/Walls.png",
+      imageSrc: "Portfolio/Walls.webp",
       imageAlt: "Walls",
       isReversed: false,
       animationVariant: slideInFromRight
@@ -219,7 +219,7 @@ const PortfolioOfConsumerOfferings = () => {
         "Vinyl",
         "Laminates"
       ],
-      imageSrc: "Portfolio/Floor.png",
+      imageSrc: "Portfolio/Floor.webp",
       imageAlt: "Floors",
       isReversed: true,
       animationVariant: slideInFromLeft
@@ -229,16 +229,18 @@ const PortfolioOfConsumerOfferings = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="min-h-screen md:bg-[url('Portfolio/bg.png')] bg-cover bg-top">
+      <div className="md:min-h-screen bg-[url('Portfolio/bg.webp')] bg-cover md:bg-top bg-center">
         <div className='marginal'>
-          <h1 className="text-[#3d4744] font-semibold md:mb-5 mb-5 md:text-5xl text-3xl">
-            PORTFOLIO OF CONSUMER OFFERINGS
-          </h1>
-          <p className='text-[#646b63] mb-5 md:text-lg'>
-            BirlaNu brings to life a world of possibilities, offering a comprehensive range of home and building
-            solutions, from pipes and construction chemicals to putty, roofs, walls and floors. Crafted with care
-            and precision, our products are designed to endure, evolve and elevate every space.
-          </p>
+          <div className='bg-white/90 p-5 xl:bg-none'>
+            <h1 className="text-[#3d4744] font-semibold md:mb-5 mb-5 md:text-5xl text-3xl">
+              PORTFOLIO OF CONSUMER OFFERINGS
+            </h1>
+            <p className='text-[#646b63] mb-5 md:text-lg'>
+              BirlaNu brings to life a world of possibilities, offering a comprehensive range of home and building
+              solutions, from pipes and construction chemicals to putty, roofs, walls and floors. Crafted with care
+              and precision, our products are designed to endure, evolve and elevate every space.
+            </p>
+          </div>
         </div>
       </div>
 

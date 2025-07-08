@@ -33,16 +33,16 @@ const AboutBirlaNu = () => {
                 </p>
               </div>
               <div className="md:w-1/2 bg-white p-2 md:translate-y-[5.5%] mb-5">
-                <img src="About/1.png" alt="About BirlaNu" className="w-full h-auto " />
+                <img src="About/1.webp" alt="About BirlaNu" className="w-full h-auto " />
               </div>
             </div>
           </div>
 
-          <div className="w-full min-h-screen bg-[url('About/bg.png')] bg-cover bg-center bg-no-repeat border-b border-t">
+          <div className="w-full min-h-screen bg-[url('About/bg.webp')] bg-cover bg-center bg-no-repeat border-b border-t">
             <div className="marginal">
               <div className="flex flex-col md:flex-row items-center md:items-center md:justify-between md:gap-30 gap-10">
                 <div className="md:w-auto flex justify-center">
-                  <img src="image.png" alt="Brand Story" className="md:w-100 w-53 h-auto xl:translate-x-[25%] lg:translate-x-[15%]" />
+                  <img src="image.webp" alt="Brand Story" className="md:w-100 w-53 h-auto xl:translate-x-[25%] lg:translate-x-[15%]" />
                 </div>
 
                 <div className="md:w-1/2">
@@ -77,7 +77,7 @@ const AboutBirlaNu = () => {
               <div
                 className="absolute inset-0 w-full h-full bg-cover bg-top bg-no-repeat"
                 style={{
-                  backgroundImage: "url('About/2.png')"
+                  backgroundImage: "url('About/2.webp')"
                 }}
               />
               <div className="absolute inset-0 " />
@@ -136,7 +136,7 @@ const AboutBirlaNu = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="bg-[url('About/3.png')] bg-cover bg-center w-full min-h-screen">
+            {/* <div className="bg-[url('About/3.webp')] bg-cover bg-center w-full min-h-screen">
               <div className='marginal'>
                 <div className='bg-black/60 p-10'>
             

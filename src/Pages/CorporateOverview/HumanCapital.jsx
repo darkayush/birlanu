@@ -21,7 +21,7 @@ const HumanCapital = () => {
           a focus on well-being. With transparent communication, progressive policies, and talent
           programs like LEGO, LEAP, and LEAD, we invest in our people’s growth and impact.
         </p>
-        <img src="HumanCapital/1.png" alt="" />
+        <img src="HumanCapital/1.webp" alt="" />
       </div>
       <div className="mt-5">
         <h2 className="text-[#646b63] font-semibold text-2xl mb-4">Hidden Gems</h2>
@@ -61,7 +61,7 @@ const HumanCapital = () => {
               </li>
             </ul>
             <div className="aspect-[16/9] w-full overflow-hidden mb-4">
-              <img src="HumanCapital/Zero tolerance 1.png" alt="" className="w-full h-full object-cover mt-5" />
+              <img src="HumanCapital/Zero tolerance 1.webp" alt="" className="w-full h-full object-cover mt-5" />
             </div>
             <h2 className="text-[#646b63] font-semibold text-2xl mb-4">Nayi Disha</h2>
             <ul className="space-y-2">
@@ -85,7 +85,7 @@ const HumanCapital = () => {
               </li>
             </ul>
             <div className="aspect-[16/9] w-full overflow-hidden mb-5">
-              <img src="HumanCapital/Yashotsav 1.png" alt="" className="w-full h-full object-cover mt-5" />
+              <img src="HumanCapital/Yashotsav 1.webp" alt="" className="w-full h-full object-cover mt-5" />
             </div>
             <h2 className="text-[#646b63] font-semibold text-2xl mb-4">Zero tolerance for discrimination
               and haraslgent</h2>
@@ -149,7 +149,7 @@ const HumanCapital = () => {
         </div>
       </div>
       <div className='md:p-10 mt-10'>
-        <img src="HumanCapital/image.png" alt="" />
+        <img src="HumanCapital/image.webp" alt="" />
       </div>
     </div>
   )

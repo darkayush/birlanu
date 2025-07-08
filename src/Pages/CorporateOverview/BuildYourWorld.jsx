@@ -7,7 +7,7 @@ const BuildYourWorld = () => {
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-top bg-no-repeat"
           style={{
-            backgroundImage: "url('BuildYourWorld/image.png')"
+            backgroundImage: "url('BuildYourWorld/image.webp')"
           }}
         />
         <div className="absolute inset-0" />

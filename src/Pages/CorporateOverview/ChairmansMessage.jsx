@@ -12,7 +12,7 @@ const ChairmansMessage = () => {
         <div className='flex md:flex-row flex-col md:gap-10'>
           <div className='md:w-1/2 bg-[#d2d3d5] lg:h-[110vh] xl:h-[95vh] 2xl:h-[80vh] overflow-hidden mb-5'>
             <img
-              src="Chairman/CKB.png"
+              src="Chairman/CKB.webp"
               alt=""
               className="w-full h-full object-cover object-top"
             />

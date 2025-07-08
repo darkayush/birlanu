@@ -84,7 +84,7 @@ const BirlaNuKeyStrengths = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('About/bg3.png')"
+                    backgroundImage: "url('About/bg3.webp')"
                 }}
             />
 
@@ -92,7 +92,7 @@ const BirlaNuKeyStrengths = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 via-transparent to-green-100/20" />
 
             {/* Content */}
-            <div className="relative z-10 py-16 px-4">
+            <div className="relative marginal">
                 <div className="mx-auto">
                     {/* Header */}
                     <div className="text-left mb-16">

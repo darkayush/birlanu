@@ -141,7 +141,7 @@ export default function Navbar() {
                                 onClick={() => handleNavigation("/")}
                                 className="flex items-center"
                             >
-                                <img src="image.png" alt="" className="md:w-40 w-30" />
+                                <img src="image.webp" alt="" className="md:w-40 w-30" />
                             </button>
 
                             <div className="hidden lg:flex items-center space-x-8" ref={dropdownRef}>
@@ -337,7 +337,7 @@ export default function Navbar() {
                                     <ExternalLink className="ml-2 h-4 w-4" />
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.ckabirlagroup.com/">
-                                    <img src="logo.png" alt="" className="w-45" />
+                                    <img src="logo.webp" alt="" className="w-45" />
                                 </a>
                             </div>
 
@@ -440,7 +440,7 @@ export default function Navbar() {
                                     className="bg-[#ffffff] flex items-center justify-center"
                                 >
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.ckabirlagroup.com/">
-                                        <img src="logo.png" alt="" className="w-45" />
+                                        <img src="logo.webp" alt="" className="w-45" />
                                     </a>
                                 </motion.div>
                             </div>

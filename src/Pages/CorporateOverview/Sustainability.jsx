@@ -6,7 +6,7 @@ const Sustainability = () => {
   const cardsData = [
     {
       id: 1,
-      image: "Sustainability/1.png",
+      image: "Sustainability/1.webp",
       title: "Live Love Laugh – rural mental health program",
       description: "Outcome: Positively impacted over 6500 individuals through mental well-being initiatives.",
       fullContent: `Now in its second year, our rural mental health program — run in partnership with the Live Love Laugh Foundation — continues to bring meaningful change to thousands of lives across three rural locations in India.
@@ -17,7 +17,7 @@ Through a comprehensive approach that includes psychiatric treatment, rehabilita
     },
     {
       id: 2,
-      image: "Sustainability/2.png",
+      image: "Sustainability/2.webp",
       title: "Child Survival India: Mobile Medical Unit (MMU)",
       description: "Outcome: Healthcare access for vulnerable populations enabling early detection of diseases.",
       fullContent: `In partnership with Child Survival India, our Mobile Medical Unit continues to bring essential healthcare services to underserved rural communities, improving health outcomes and saving lives. The unit offers free, high-quality outpatient consultations, medication, and regular health awareness sessions — enabling early detection and timely treatment of medical conditions.
@@ -28,7 +28,7 @@ This year, the initiative took on added significance through focused community e
     },
     {
       id: 3,
-      image: "Sustainability/3.png",
+      image: "Sustainability/3.webp",
       title: "Education initiatives through public private partnerships",
       description: "Outcome: Increased schooling rates and enhanced digital literacy.",
       fullContent: `Our education initiatives are creating lasting impact by improving school infrastructure and expanding digital access for young learners. Through the construction and renovation of classrooms and facilities, we are fostering safe, inclusive, and secure learning environments — encouraging increased school enrolment and regular attendance.
@@ -39,7 +39,7 @@ Recognizing the growing importance of digital literacy, our programs also equip 
     },
     {
       id: 4,
-      image: "Sustainability/4.png",
+      image: "Sustainability/4.webp",
       title: "Sambhav Foundation – Skill building programs",
       description: "Outcome: Livelihood training through skill-based learning.",
       fullContent: `In partnership with the Sambhav Foundation, we have launched livelihood skill training initiative aimed at empowering plumbers, masons, and painters across multiple cities. The program combines structured classroom instruction with industry-recognized certification, equipping participants with practical, job-ready skills.
@@ -60,7 +60,7 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
         <div
           className="absolute inset-0 w-full h-full bg-cover md:bg-center bg-[49.4%] bg-no-repeat"
           style={{
-            backgroundImage: "url('Sustainability/image.png')"
+            backgroundImage: "url('Sustainability/image.webp')"
           }}
         />
         <div className="absolute inset-0" />
@@ -137,7 +137,7 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
         <div
           className="absolute inset-0 w-full h-full md:bg-cover md:bg-center bg-[70%] bg-no-repeat"
           style={{
-            backgroundImage: "url('Sustainability/bg2.jpg')"
+            backgroundImage: "url('Sustainability/bg2.webp')"
           }}
         />
         <div className="absolute inset-0" />
@@ -171,14 +171,14 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
             <div className='flex xl:flex-col md:gap-20 gap-10 mt-5 xl:gap-2'>
               <div className='flex xl:flex-col xl:items-end'>
                 <div className='flex flex-col items-center'>
-                  <img src="Sustainability/icon1.png" alt="" className='w-20' />
+                  <img src="Sustainability/icon1.webp" alt="" className='w-20' />
                   <h1 className='text-4xl font-bold text-[#414550] border-b-2'>~30,000</h1>
                   <h2>Total Beneficiaries</h2>
                 </div>
               </div>
               <div className='flex xl:flex-col xl:items-end'>
                 <div className='flex flex-col items-center'>
-                  <img src="Sustainability/icon2.png" alt="" className='w-20' />
+                  <img src="Sustainability/icon2.webp" alt="" className='w-20' />
                   <h1 className='text-4xl font-bold text-[#414550] border-b-2'>3.14 Cr.</h1>
                   <h2>CSR Expenditure</h2>
                 </div>
@@ -250,7 +250,7 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
 
       <div className='marginal flex md:flex-row flex-col md:gap-10 gap-5'>
         <div className='md:w-1/2 md:h-[85vh] h-[40vh] overflow-hidden mb-5 bg-white p-2'>
-          <img src="Sustainability/governance.png" alt="" className='w-full h-full object-cover object-top' />
+          <img src="Sustainability/governance.webp" alt="" className='w-full h-full object-cover object-top' />
         </div>
         <div className='md:w-1/2'>
           <h1 className="text-[#646b63] font-semibold md:mb-10 mb-5 md:text-5xl text-3xl">

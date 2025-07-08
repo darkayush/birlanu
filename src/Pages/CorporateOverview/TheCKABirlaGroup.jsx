@@ -32,7 +32,7 @@ const TheCKABirlaGroup = () => {
         </p>
       </div>
       <div>
-        <img src="CKABirlaGroup\image.png" alt="" />
+        <img src="CKABirlaGroup\image.webp" alt="" />
       </div>
     </div>
   )

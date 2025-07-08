@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="flex items-center space-x-4">
               <a href="/" className="block">
                 <img
-                  src="image.png"
+                  src="image.webp"
                   alt="BirlaNu Logo"
                   className="w-40 object-contain filter brightness-0 invert"
                 />
@@ -245,7 +245,7 @@ const Footer = () => {
                 className="inline-flex items-center space-x-1 hover:text-neutral-300 transition-colors duration-200"
               >
                 <img
-                  src="/k&a logo.svg"
+                  src="/k&a logo.webp"
                   alt="K&A Developer Logo"
                   className="w-4 h-4 object-contain"
                 />
