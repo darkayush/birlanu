@@ -65,7 +65,7 @@ const AwardsAndAchievements = () => {
                 viewport={{ once: true }}
               >
                 <div className='w-full aspect-[16/15] flex items-center justify-center'>
-                  <img src={award.img} alt="" className='max-w-[20vw] object-contain' />
+                  <img src={award.img} alt="" className='md:max-w-[20vw] max-w-[40vw] object-contain' />
                 </div>
                 <div className='mt-4 px-2'>
                   <h1 className='text-[#4d4d4f] font-semibold'>{award.title}</h1>
