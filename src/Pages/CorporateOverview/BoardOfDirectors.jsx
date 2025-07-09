@@ -73,7 +73,7 @@ const BoardOfDirectors = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.9, delay: index * 0.1 }}
             >
               <div className="aspect-square overflow-hidden rounded-md">
                 <img src={person.image} alt={person.name} className="w-full h-full object-cover object-top bg-[#e7dfd1]" />

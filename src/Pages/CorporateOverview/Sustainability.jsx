@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion, AnimatePresence } from "framer-motion"
 
 const Sustainability = () => {
   const [expandedCard, setExpandedCard] = useState(null)
@@ -9,9 +10,7 @@ const Sustainability = () => {
       image: "Sustainability/1.webp",
       title: "Live Love Laugh – rural mental health program",
       description: "Outcome: Positively impacted over 6500 individuals through mental well-being initiatives.",
-      fullContent: `Now in its second year, our rural mental health program — run in partnership with the Live Love Laugh Foundation — continues to bring meaningful change to thousands of lives across three rural locations in India.
-
-Through a comprehensive approach that includes psychiatric treatment, rehabilitation, and community - wide mental health awareness, the initiative has significantly improved the well-being of its beneficiaries. Many individuals have not only achieved better mental health but also become financially independent and active participants in their communities.`,
+      fullContent: `Now in its second year, our rural mental health program — run in partnership with the Live Love Laugh Foundation — continues to bring meaningful change to thousands of lives across three rural locations in India. Through a comprehensive approach that includes psychiatric treatment, rehabilitation, and community - wide mental health awareness, the initiative has significantly improved the well-being of its beneficiaries. Many individuals have not only achieved better mental health but also become financially independent and active participants in their communities.`,
       beneficiaries: "6,300+",
       beneficiariesLabel: "Beneficiaries"
     },
@@ -20,9 +19,7 @@ Through a comprehensive approach that includes psychiatric treatment, rehabilita
       image: "Sustainability/2.webp",
       title: "Child Survival India: Mobile Medical Unit (MMU)",
       description: "Outcome: Healthcare access for vulnerable populations enabling early detection of diseases.",
-      fullContent: `In partnership with Child Survival India, our Mobile Medical Unit continues to bring essential healthcare services to underserved rural communities, improving health outcomes and saving lives. The unit offers free, high-quality outpatient consultations, medication, and regular health awareness sessions — enabling early detection and timely treatment of medical conditions.
-
-This year, the initiative took on added significance through focused community engagement during key health observances such as Nutrition Month, World Heart Day etc. These efforts are making a lasting difference in building healthier, more informed communities across rural India.`,
+      fullContent: `In partnership with Child Survival India, our Mobile Medical Unit continues to bring essential healthcare services to underserved rural communities, improving health outcomes and saving lives. The unit offers free, high-quality outpatient consultations, medication, and regular health awareness sessions — enabling early detection and timely treatment of medical conditions. This year, the initiative took on added significance through focused community engagement during key health observances such as Nutrition Month, World Heart Day etc. These efforts are making a lasting difference in building healthier, more informed communities across rural India.`,
       beneficiaries: "20,000+",
       beneficiariesLabel: "Beneficiaries"
     },
@@ -31,9 +28,7 @@ This year, the initiative took on added significance through focused community e
       image: "Sustainability/3.webp",
       title: "Education initiatives through public private partnerships",
       description: "Outcome: Increased schooling rates and enhanced digital literacy.",
-      fullContent: `Our education initiatives are creating lasting impact by improving school infrastructure and expanding digital access for young learners. Through the construction and renovation of classrooms and facilities, we are fostering safe, inclusive, and secure learning environments — encouraging increased school enrolment and regular attendance.
-
-Recognizing the growing importance of digital literacy, our programs also equip students with foundational knowledge in emerging fields helping bridge the digital divide and preparing them for the future.`,
+      fullContent: `Our education initiatives are creating lasting impact by improving school infrastructure and expanding digital access for young learners. Through the construction and renovation of classrooms and facilities, we are fostering safe, inclusive, and secure learning environments — encouraging increased school enrolment and regular attendance. Recognizing the growing importance of digital literacy, our programs also equip students with foundational knowledge in emerging fields helping bridge the digital divide and preparing them for the future.`,
       beneficiaries: "350+",
       beneficiariesLabel: "Beneficiaries"
     },
@@ -42,9 +37,7 @@ Recognizing the growing importance of digital literacy, our programs also equip 
       image: "Sustainability/4.webp",
       title: "Sambhav Foundation – Skill building programs",
       description: "Outcome: Livelihood training through skill-based learning.",
-      fullContent: `In partnership with the Sambhav Foundation, we have launched livelihood skill training initiative aimed at empowering plumbers, masons, and painters across multiple cities. The program combines structured classroom instruction with industry-recognized certification, equipping participants with practical, job-ready skills.
-
-By focusing on productivity, efficiency, and technical know-how, the initiative enhances on-the-job performance while opening doors to better employment prospects and higher wages.`,
+      fullContent: `In partnership with the Sambhav Foundation, we have launched livelihood skill training initiative aimed at empowering plumbers, masons, and painters across multiple cities. The program combines structured classroom instruction with industry-recognized certification, equipping participants with practical, job-ready skills. By focusing on productivity, efficiency, and technical know-how, the initiative enhances on-the-job performance while opening doors to better employment prospects and higher wages.`,
       beneficiaries: "3,200+",
       beneficiariesLabel: "Beneficiaries"
     }
@@ -68,7 +61,7 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
           <div className="marginal">
             <div className='bg-[white]/90 p-10 mt-5 mb-5'>
               <div className="">
-                <h1 className="text-4xl md:text-5xl font-semibold text-[#646b64] mb-5">
+                <h1 className="text-3xl md:text-5xl font-semibold text-[#646b64] mb-5">
                   SUSTAINABILITY
                 </h1>
                 <h2 className='text-[#646b64] md:text-lg font-semibold mb-5'>Sustainability isn't a choice; it's a responsibility we own.</h2>
@@ -191,17 +184,20 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
       <div className="marginal py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-6">
           {cardsData.map((card) => (
-            <div
+            <motion.div
               key={card.id}
-              className={`bg-white transition-all duration-500 ease-in-out ${expandedCard === card.id ? 'md:col-span-2' : ''
-                }`}
+              layout
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className={`bg-white overflow-hidden ${expandedCard === card.id ? 'md:col-span-2' : ''}`}
             >
               <div className="w-full">
-                <img
+                <motion.img
                   src={card.image}
                   alt={card.title}
-                  className={`w-full object-cover transition-all duration-500 ${expandedCard === card.id ? 'h-64' : 'h-48'
-                    }`}
+                  layout
+                  className="w-full object-cover"
+                  animate={{ height: expandedCard === card.id ? 256 : 192 }} // 64 * 4 = 256px, 48 * 4 = 192px
+                  transition={{ duration: 0.5 }}
                 />
               </div>
 
@@ -214,39 +210,48 @@ By focusing on productivity, efficiency, and technical know-how, the initiative 
                   {card.description}
                 </p>
 
-                <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedCard === card.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                >
-                  <div className="mb-4">
-                    <p className="text-[#4d4d4f] text-lg leading-relaxed whitespace-pre-line">
-                      {card.fullContent}
-                    </p>
-                  </div>
+                <AnimatePresence initial={false}>
+                  {expandedCard === card.id && (
+                    <motion.div
+                      key="expandable"
+                      initial={{ maxHeight: 0, opacity: 0 }}
+                      animate={{ maxHeight: 800, opacity: 1 }}
+                      exit={{ maxHeight: 0, opacity: 0 }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="mb-4 mt-2">
+                        <p className="text-[#4d4d4f] text-lg leading-relaxed whitespace-pre-line">
+                          {card.fullContent}
+                        </p>
+                      </div>
 
-                  <div className="border-t border-gray-200 pt-4">
-                    <div className="flex flex-col items-center">
-                      <h4 className="text-3xl font-bold text-[#414550] border-b-2 border-[#414550]">
-                        {card.beneficiaries}
-                      </h4>
-                      <p className="text-[#4d4d4f] text-lg mt-1">
-                        {card.beneficiariesLabel}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                      <div className="border-t border-gray-200 pt-4">
+                        <div className="flex flex-col items-center">
+                          <h4 className="text-3xl font-bold text-[#414550] border-b-2 border-[#414550]">
+                            {card.beneficiaries}
+                          </h4>
+                          <p className="text-[#4d4d4f] text-lg mt-1">
+                            {card.beneficiariesLabel}
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
 
                 <button
                   onClick={() => toggleCard(card.id)}
-                  className="text-[#215e9e] text-lg font-medium hover:underline transition-colors"
+                  className="text-[#215e9e] text-lg font-medium hover:underline transition-colors mt-4"
                 >
                   {expandedCard === card.id ? 'Read Less' : 'Read More'}
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
+
 
       <div className='marginal flex md:flex-row flex-col md:gap-10 gap-5'>
         <div className='md:w-1/2 md:h-[85vh] h-[40vh] overflow-hidden mb-5 bg-white p-2'>

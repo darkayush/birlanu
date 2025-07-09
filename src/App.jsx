@@ -22,8 +22,8 @@ import ScrollToTop from './Components/ScrollToTop';
 
 const App = () => {
   return (
-    <LenisScroll>
       <div>
+        <LenisScroll>
         <BrowserRouter>
         <ScrollToTop/>
           <Navbar />
@@ -48,8 +48,8 @@ const App = () => {
           </div>
           <Footer/>
         </BrowserRouter>
+        </LenisScroll>
       </div>
-    </LenisScroll>
   )
 }
 

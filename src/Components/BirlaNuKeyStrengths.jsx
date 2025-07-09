@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const BirlaNuKeyStrengths = () => {
     const [visibleSections, setVisibleSections] = useState([]);
@@ -62,85 +63,75 @@ const BirlaNuKeyStrengths = () => {
                 entries.forEach((entry) => {
                     const index = parseInt(entry.target.dataset.index);
                     if (entry.isIntersecting) {
-                        setVisibleSections(prev => [...new Set([...prev, index])]);
+                        setVisibleSections((prev) => [...new Set([...prev, index])]);
                     }
                 });
             },
             {
                 threshold: 0.3,
-                rootMargin: '0px 0px -20% 0px'
+                rootMargin: '0px 0px -20% 0px',
             }
         );
 
         const sections = sectionsRef.current?.querySelectorAll('[data-index]');
-        sections?.forEach(section => observer.observe(section));
+        sections?.forEach((section) => observer.observe(section));
 
         return () => observer.disconnect();
     }, []);
 
     return (
         <div className="min-h-screen relative overflow-hidden">
-            {/* Background Image */}
+            {/* Background */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('About/bg3.webp')"
+                    backgroundImage: "url('About/bg3.webp')",
                 }}
             />
-
-            {/* Green tinted overlay for nature effect */}
             <div className="absolute inset-0 bg-gradient-to-br from-green-50/30 via-transparent to-green-100/20" />
 
             {/* Content */}
             <div className="relative marginal">
                 <div className="mx-auto">
-                    {/* Header */}
                     <div className="text-left mb-16">
                         <h1 className="text-4xl text-center md:text-5xl font-semibold text-[#3d4744] mb-4">
                             BIRLANU'S KEY STRENGTHS
                         </h1>
                     </div>
 
-                    {/* Strengths Grid */}
                     <div ref={sectionsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {strengthsData.map((strength, index) => (
-                            <div
+                            <motion.div
                                 key={index}
                                 data-index={index}
-                                className={`transition-all duration-1000 ease-out ${visibleSections.includes(index)
-                                        ? 'opacity-100 translate-y-0'
-                                        : 'opacity-0 translate-y-12'
-                                    }`}
-                                style={{
-                                    transitionDelay: `${index * 150}ms`
-                                }}
+                                initial={{ opacity: 0, y: 48 }}
+                                animate={visibleSections.includes(index) ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.8, delay: index * 0.15 }}
                             >
-                                <div className="bg-white/90 p-6 shadow-md border border-gray-100/50 h-full">
-                                    {/* Title */}
+                                <motion.div
+                                    layout
+                                    className="bg-white/90 p-6 shadow-md border border-gray-100/50 h-full"
+                                >
                                     <h3 className="text-lg font-semibold text-[#231e21] mb-6 leading-tight">
                                         {strength.title}
                                     </h3>
 
-                                    {/* Stats */}
                                     <div className="space-y-4 mb-6">
                                         {strength.stats.map((stat, statIndex) => (
-                                            <div
+                                            <motion.div
                                                 key={statIndex}
-                                                className={`transition-all duration-700 ease-out ${visibleSections.includes(index)
-                                                        ? 'opacity-100 translate-x-0'
-                                                        : 'opacity-0 translate-x-8'
-                                                    }`}
-                                                style={{
-                                                    transitionDelay: `${(index * 150) + (statIndex * 100)}ms`
-                                                }}
+                                                initial={{ opacity: 0, x: 32 }}
+                                                animate={visibleSections.includes(index) ? { opacity: 1, x: 0 } : {}}
+                                                transition={{ duration: 0.6, delay: index * 0.15 + statIndex * 0.1 }}
+                                                
                                             >
                                                 <div className="flex items-start space-x-2">
                                                     <p className="text-md text-[#4d4d4f] leading-relaxed">
                                                         {stat.label.includes(':') ? (
                                                             <>
-                                                                <span className="text-[#3d4744]">
+                                                                <span className="text-[#3d4744] font-medium">
                                                                     {stat.label.split(':')[0]}:
-                                                                </span>
+                                                                </span>{' '}
                                                                 <span className="text-[#3d4744]">
                                                                     {stat.label.split(':')[1]}
                                                                 </span>
@@ -150,11 +141,10 @@ const BirlaNuKeyStrengths = () => {
                                                         )}
                                                     </p>
                                                 </div>
-                                            </div>
+                                            </motion.div>
                                         ))}
                                     </div>
 
-                                    {/* Subtitle and Description */}
                                     {strength.subtitle && (
                                         <div className="border-t border-gray-200/50 pt-4">
                                             <h4 className="text-base font-semibold text-[#3d4744] mb-2">
@@ -167,14 +157,13 @@ const BirlaNuKeyStrengths = () => {
                                             )}
                                         </div>
                                     )}
-                                </div>
-                            </div>
+                                </motion.div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
             </div>
 
-            {/* Decorative Elements */}
             <div className="absolute top-20 right-10 w-32 h-32 bg-green-100/20 rounded-full blur-3xl" />
             <div className="absolute bottom-20 left-10 w-24 h-24 bg-blue-100/20 rounded-full blur-2xl" />
         </div>

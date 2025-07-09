@@ -138,7 +138,7 @@ const HumanCapital = () => {
                 variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <p className="text-5xl font-bold">{item.value}</p>

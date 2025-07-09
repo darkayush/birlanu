@@ -38,7 +38,7 @@ const AboutBirlaNu = () => {
             </div>
           </div>
 
-          <div className="w-full min-h-screen bg-[url('About/bg.webp')] bg-cover bg-center bg-no-repeat border-b border-t">
+          <div className="w-full min-h-screen bg-[url('/About/bg.webp')] bg-cover bg-center bg-no-repeat border-b border-t">
             <div className="marginal">
               <div className="flex flex-col md:flex-row items-center md:items-center md:justify-between md:gap-30 gap-10">
                 <div className="md:w-auto flex justify-center">
@@ -136,13 +136,6 @@ const AboutBirlaNu = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="bg-[url('About/3.webp')] bg-cover bg-center w-full min-h-screen">
-              <div className='marginal'>
-                <div className='bg-black/60 p-10'>
-            
-                </div>
-              </div>
-            </div> */}
           </div>
           <div>
             <BirlaNuKeyStrengths/>

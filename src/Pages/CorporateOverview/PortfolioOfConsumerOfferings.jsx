@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const PortfolioOfConsumerOfferings = () => {
-  // Animation variants for alternating directions
   const slideInFromRight = {
     hidden: { opacity: 0, x: 100 },
     visible: {
@@ -34,7 +33,7 @@ const PortfolioOfConsumerOfferings = () => {
       className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-6 lg:gap-10 items-center mb-12 lg:mb-16`}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.3 }}
       variants={animationVariant}
     >
       {/* Image Section */}
@@ -228,8 +227,7 @@ const PortfolioOfConsumerOfferings = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <div className="md:min-h-screen bg-[url('Portfolio/bg.webp')] bg-cover md:bg-top bg-center">
+      <div className="md:min-h-screen bg-[url('/Portfolio/bg.webp')] bg-cover md:bg-top bg-center">
         <div className='marginal'>
           <div className='bg-white/90 p-5 xl:bg-none'>
             <h1 className="text-[#3d4744] font-semibold md:mb-5 mb-5 md:text-5xl text-3xl">
@@ -243,8 +241,6 @@ const PortfolioOfConsumerOfferings = () => {
           </div>
         </div>
       </div>
-
-      {/* Products Section */}
       <div className='marginal py-12 lg:py-16'>
         {products.map((product, index) => (
           <ProductSection key={index} {...product} />
